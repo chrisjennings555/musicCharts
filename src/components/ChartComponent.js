@@ -10,7 +10,13 @@ const ChartComponent = (props) => {
     {props.songs.map((song, index) => {
       return (
         <SongItem
-          title={song['im:name'].label}
+        key={index}
+        position={index + 1}
+        title={song['im:name'].label}
+        artist={song['im:artist'].label}
+        image={song['im:image'][1].label}
+        audio={song.link[1].attributes.href}
+        handlePlayPause={props.handlePlayPause}
         />
       )
     })}

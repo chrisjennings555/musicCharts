@@ -8,6 +8,7 @@ class SongContainer extends Component {
     this.state = {
       songs: []
     }
+    this.handlePlayPause = this.handlePlayPause.bind(this);
   }
 
   componentDidMount(){
@@ -25,11 +26,20 @@ class SongContainer extends Component {
     request.send();
   }
 
+  handlePlayPause(audio){
+    audio.paused ? audio.play() : audio.pause();
+    audio.classList.toggle('playing');
+  }
+
   render(){
     return(
       <div>
         <h2>TOP 20 SONGS</h2>
-        <ChartContainer songs={this.state.songs}/>
+        <ChartContainer
+        songs={this.state.songs}
+        url='https://itunes.apple.com/gb/rss/topsongs/limit=20/json'
+        handlePlayPause={this.handlePlayPause}
+        />
       </div>
     );
   }
