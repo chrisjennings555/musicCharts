@@ -35,7 +35,7 @@ class SongContainer extends Component {
     return(
       <div>
         <div id="titleBanner">
-        <h2>UK TOP 20 HITS!</h2>
+          <h2>iTunes Official Top 20</h2>
         </div>
         <ChartContainer
         songs={this.state.songs}

@@ -9,19 +9,31 @@ class SongItem extends Component {
     return (
       <div className='song'>
 
-          <h3>{this.props.position}. {this.props.title}</h3>
+          <div id="song-position">
+            <h2>{this.props.position}</h2>
+          </div>
 
-          <h6>{this.props.artist}</h6>
+          <div id="song-title">
+            <h3>{this.props.title}</h3>
+          </div>
 
-          <img src={this.props.image} alt=""/>
+          <div id="song-artist-name">
+            <h6>{this.props.artist}</h6>
+          </div>
 
-          <img
-            alt={"Play " + altTag}
-            id={this.props.position}
-            className='audio-control'
-            src='play_button.png'
-            onClick={() => {this.props.handlePlayPause(this.audio)}}
-          />
+          <div id="song-album-artwork">
+            <img src={this.props.image} alt=""/>
+          </div>
+
+          <div id="song-audio-button">
+            <img
+              alt={"Play " + altTag}
+              id={this.props.position}
+              className='audio-control'
+              src='play_button.png'
+              onClick={() => {this.props.handlePlayPause(this.audio)}}
+            />
+          </div>
 
           <audio
             ref={(audio) => this.audio = audio}
@@ -29,7 +41,7 @@ class SongItem extends Component {
             src={this.props.audio}
           />
 
-        </div>
+      </div>
     )
   }
 }
