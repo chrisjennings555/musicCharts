@@ -6,7 +6,7 @@ const ChartComponent = (props) => {
     return <p> Loading... </p>
   }
   return (
-    <div>
+    <div id="songList">
     {props.songs.map((song, index) => {
       return (
         <SongItem

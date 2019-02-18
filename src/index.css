@@ -6,6 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #D5DBDB;
 }
 
 code {
@@ -14,7 +15,41 @@ code {
 }
 
 .audio-control {
-  opacity: 0.5;
   margin-right: 10px;
   width: 60px;
+}
+
+#titleBanner {
+  font-family: 'Bungee Shade', cursive;
+  font-size: 3em;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  color: #CB4335;
+}
+
+.song {
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  font-size: 2em;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: white;
+  border-width: 3px;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: gold;
+  background-color: #626567;
+}
+
+#songList {
+  align-items: center;
+  text-align: center;
+  align-content: center;
 }

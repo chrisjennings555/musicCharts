@@ -34,7 +34,9 @@ class SongContainer extends Component {
   render(){
     return(
       <div>
-        <h2>TOP 20 SONGS</h2>
+        <div id="titleBanner">
+        <h2>UK TOP 20 HITS!</h2>
+        </div>
         <ChartContainer
         songs={this.state.songs}
         url='https://itunes.apple.com/gb/rss/topsongs/limit=20/json'

@@ -9,7 +9,9 @@ class SongItem extends Component {
     return (
       <div className='song'>
 
-          <h3>{this.props.title}</h3>
+          <h3>{this.props.position}. {this.props.title}</h3>
+
+          <h6>{this.props.artist}</h6>
 
           <img src={this.props.image} alt=""/>
 
