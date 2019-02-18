@@ -1,3 +1,7 @@
+Please view the completed project here, on Heroku -
+
+https://music-charts.herokuapp.com/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
